@@ -1,0 +1,67 @@
+#msgBox {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color:rgba(237, 246, 243, 0.9);
+  box-shadow: 2px 3px 15px #33333339, 4px 4px 15px #33333339;
+  /* width: 300px; */
+  line-height: 180%;
+  padding: 20px 10px;
+  padding-top: 10px;
+  border-radius: 10px;
+}
+
+#msgBox > div:nth-child(1) {
+  font-weight: 300;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+#msgBox > div > img {
+  width: 40px;
+}
+
+#cancelButton {
+  cursor: default;
+  position: fixed;
+  right: 40px;
+  padding: 10px;
+  /* background-color: aqua; */
+  div {
+    background-color: #000;
+    width: 12px;
+    height: 12px;
+    clip-path: polygon(
+      0 10%,
+      10% 0,
+      50% 40%,
+      90% 0,
+      100% 10%,
+      60% 50%,
+      100% 90%,
+      90% 100%,
+      50% 60%,
+      10% 100%,
+      0 90%,
+      40% 50%
+    );
+  }
+}
+#cancelButton:active{
+    border: 2px solid dodgerblue;
+}
+
+#msgBox > p {
+  font-size: 13px;
+}
+
+.app {
+  margin-top: 10px;
+  border: 1px solid dodgerblue;
+  width: fit-content;
+  padding: 0px 15px;
+  color: dodgerblue;
+  border-radius: 30px;
+  font-size: 14px;
+}

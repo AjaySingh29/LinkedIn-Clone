@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | LinkedIn | Replica</title>
+    <link rel="stylesheet" href="../css/loginWrapper.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/mobileDisplay.css">
+    <link rel="icon" href="../images/linkedin-logo-free-download-free-png.png" type="image/x-icon">
+</head>
+
+<body>
+    <a href="/index.html">
+        <img src="../images/R.png" alt="LinkedIn Logo" id="LinkedInLogo">
+    </a>
+    <div id="loginWrapper">
+        <strong>Make the most of your professional life</strong>
+        <strong id="after"></strong>
+        <div id="readability">Show</div>
+        <div id="loginContainer">
+            <form action="#" method="post" onsubmit="validateForm(event)" name="regForm1" id="regForm1">
+                <p>
+                    <label for="contact">Email or phone number</label>
+                    <input type="text" id="contact" name="contact">
+                    <span id="contactError"></span>
+                </p>
+                <p>
+                    <label for="password">Password (10+ characters)</label>
+                    <input type="password" id="password" name="password">
+                    <span id="passwordError"></span>
+                </p>
+                <p style="justify-content: flex-start; flex-direction: row; align-items: center; gap: 5px;"
+                    id="rememberMe">
+                    <input type="checkbox" style="max-width: fit-content;" id="remember" name="remeber" checked>
+                    <label for="remember">Remember me</label>
+                </p>
+                <p id="policy">
+                    By clicking Agree & Join or Continue, you agree to the LinkedIn <a href="#">User Agreement</a>, <a
+                        href="#">Privacy Policy</a>, and <a href="#">Cookie Policy</a>.
+                </p>
+                <input type="submit" class="agree" value="Agree & Continue">
+                <div class="orSection">
+                    <p>or</p>
+                </div>
+                <div id="gmailContainer">
+                    <a href="https://accounts.google.com/gsi/select?client_id=990339570472-k6nqn1tpmitg8pui82bfaun3jrpmiuhs.apps.googleusercontent.com&auto_select=false&ux_mode=popup&ui_mode=card&context=use&as=rLqQPu10aeHMcaNtgW2v9g&channel_id=7c7ee2f6c8ab11b388920eccef8dd66627bc32b0e91bb53497ace67334dd7acf&origin=https%3A%2F%2Fwww.linkedin.com"
+                        target="_blank">
+                        <div class="continue"><img src="../images/Google-Symbol.png" alt="Google Logo"><span>Continue
+                                with
+                                Google</span></div>
+                    </a>
+                </div>
+                <p id="signIn">Already on LinkedIn? <a href="#">Sign in</a></p>
+            </form>
+            <form action="#" method="post" onsubmit="validateFormforName(e)" onmouseover="expand()" name="regForm2"
+                id="regForm2">
+                <p>
+                    <label for="fname">First name</label>
+                    <input type="text" id="fname" name="fname">
+                    <span id="fnameError"></span>
+                </p>
+                <p>
+                    <label for="lname">Last name</label>
+                    <input type="text" id="lname" name="lname">
+                </p>
+                <p>
+                    <a href="./homePage.html">
+                        <div id="submit" class="agree" style="color: #fff;">
+                            <p style="color: white; padding: 0; margin: 0;">
+                                Continue
+                            </p>
+                        </div>
+                    </a>
+                </p>
+            </form>
+        </div>
+
+        <p class="help">Looking to create a page for a business? <a href="#">Get help</a></p>
+    </div>
+    <div id="footer">
+        <div>
+            <div>
+                <img src="../images/1656997251linkedin-logo-black.webp" alt="LinkedIn Logo Black">
+                <span>&copy;</span> <span>2024</span>
+            </div>
+            <div><a href="#">About</a></div>
+            <div><a href="#">Accessibilty</a></div>
+            <div><a href="#">User Agreement</a></div>
+            <div><a href="#">Privacy Policy</a></div>
+            <div><a href="#">Cookie Policy</a></div>
+            <div><a href="#">Copyright Policy</a></div>
+            <div><a href="#">Brand Policy</a></div>
+            <div><a href="#">Guest Controls</a></div>
+            <div><a href="#">Community Guidelines</a></div>
+            <div id="languageDropdown">
+                <select name="language" id="language">
+                    <option value="language" id="optLang">
+                        Language
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </option>
+                    <option value="arabic">
+                        <div>Arabic</div>
+                    </option>
+                    <option value="czech">Czech</option>
+                    <option value="english">English</option>
+                    <option value="spanish">Spanish</option>
+                    <option value="french">French</option>
+                    <option value="persian">Persian</option>
+                    <option value="hindi">Hindi</option>
+                    <option value="italian">Italian</option>
+                    <option value="japanese">Japanese</option>
+                    <option value="portugese">Portugese</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <script src="../js/loginWrapper.js"></script>
+    <script src="../js/loginFormValidation.js"></script>
+    <script src="../js/nameFormValidation.js"></script>
+</body>
+
+</html>

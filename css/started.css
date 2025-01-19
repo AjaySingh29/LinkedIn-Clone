@@ -1,0 +1,25 @@
+.getStarted {
+  background-image: url("../images/company-concept-illustration_114360-2721.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 20px;
+  p {
+    font-size: 30px;
+    color: black;
+  }
+  a {
+    button {
+      color: white;
+      font-size: 16px;
+      background-color: rgb(30, 122, 213);
+      padding: 15px 25px;
+      border: 0;
+      border-radius: 30px;
+    }
+  }
+}

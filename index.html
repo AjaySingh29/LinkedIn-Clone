@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linkedin | Replica</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/page.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/wrapper.css">
+    <link rel="stylesheet" href="./css/slider.css">
+    <link rel="stylesheet" href="./css/skills.css">
+    <link rel="stylesheet" href="./css/skillsDropdown.css">
+    <link rel="stylesheet" href="./css/navigateLife.css">
+    <link rel="stylesheet" href="./css/dream.css">
+    <link rel="stylesheet" href="./css/started.css">
+    <link rel="stylesheet" href="./css/browseLinkedin.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/msgBox.css">
+    <link rel="stylesheet" href="./css/mobileDisplay.css">
+    <link rel="icon" href="./images/linkedin-logo-free-download-free-png.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo"><img src="./images/R.png" alt="Linkedin Logo"></div>
+            <div class="nav">
+                <div class="nav_items">
+                    <span>
+                        <i class="fa-regular fa-newspaper"></i>
+                        <p>Articles</p>
+                    </span>
+                    <span>
+                        <i class="fa-solid fa-person"></i>
+                        <p>People</p>
+                    </span>
+                    <span>
+                        <i class="fa-brands fa-square-youtube"></i>
+                        <p>Learning</p>
+                    </span>
+                    <span>
+                        <i class="fa-solid fa-briefcase"></i>
+                        <p>Jobs</p>
+                    </span>
+                    <span>
+                        <i class="fa-solid fa-puzzle-piece"></i>
+                        <p>Games</p>
+                    </span>
+                    <span>
+                        <i class="fa-solid fa-laptop"></i>
+                        <p>Get the app</p>
+                    </span>
+                </div>
+                <div class="join_now">
+                    <a href="./webpage/loginPage.html">Join Now</a>
+                </div>
+                <div class="sign_in">
+                    <a href="#">Sign In</a>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper1">
+            <div>
+                <p>Welcome to your professional community</p>
+                <a href="#">
+                    <div>
+                        <img src="./images/Google-Symbol.png" alt="Google Symbol">
+                        Continue with Google
+                    </div>
+                </a>
+                <a href="#">
+                    <div>Sign in with email</div>
+                </a>
+                <p style="font-weight: 400;" id="signInLink">New to LinkedIn? <a href="#"
+                        style="text-decoration: none; color: dodgerblue; font-weight: 500;">Join Now</a></p>
+                <span>By clicking Continue to join or sign in, you agree to linkedIn's <a href="#">User Agreement</a>,
+                    <a href="#">Privacy Policy</a>, and <a href="#" id="cookie">Cookie Policy</a>.</span>
+            </div>
+            <div>
+                <img src="./images/AAYAAgSrAAgAAQAAAAAAAGM6w-NyPk-_SVikYiCJ6V3Z-Q.png" alt="Celebration" height="100%">
+            </div>
+        </div>
+        <div class="wrapper2">
+            <div>
+                <span>Explore collabrative articles</span>
+                <p>We're unlocking community knowledge in a new way. Experts add insights directly into each article,
+                    started with the help of AI.</p>
+            </div>
+            <div id="articles">
+                <div>Marketing</div>
+                <div>Public Administation</div>
+                <div>Healthcare</div>
+                <div>Engineering</div>
+                <div>IT Services</div>
+                <div>Sustainability</div>
+                <div>Business Administration</div>
+                <div>Telecommunications</div>
+                <div>HR Managements</div>
+                <div><a href="#" class="show_all">Show all</a></div>
+            </div>
+        </div>
+        <div class="wrapper2" style="background-color: transparent; gap: 190px;">
+            <span style="width: 200px;">Find the right job for internship for you</span>
+            <div id="dropdown">
+                <div id="article1" style="width: 600px;">
+                    <div>Engineering</div>
+                    <div>Business Development</div>
+                    <div>Finance</div>
+                    <div>Administrative Assistant</div>
+                    <div>Retail Associate</div>
+                    <div>Customer Service</div>
+                    <div>Operations</div>
+                    <div>Information Technology</div>
+                    <div>Marketing</div>
+                    <div>Human Resources</div>
+                    <!-- </div> -->
+                    <!-- <div id="article2"> -->
+                    <div class="article" style="--i: 1">Healthcare Service</div>
+                    <div class="article" style="--i: 2">Sales</div>
+                    <div class="article" style="--i: 3">Program and Project Management</div>
+                    <div class="article" style="--i: 4">Accounting</div>
+                    <div class="article" style="--i: 5">Arts and Design</div>
+                    <div class="article" style="--i: 6">Community and Social Services</div>
+                    <div class="article" style="--i: 7">Consulting</div>
+                    <div class="article" style="--i: 8">Education</div>
+                    <div class="article" style="--i: 9">Entrepreneurship</div>
+                    <div class="article" style="--i: 10">Legal</div>
+                    <div class="article" style="--i: 11">Media and Communications</div>
+                    <div class="article" style="--i: 12">Military and Protective Services</div>
+                    <div class="article" style="--i: 13">Product Management</div>
+                    <div class="article" style="--i: 14">Purchasing</div>
+                    <div class="article" style="--i: 15">Quality Assurance</div>
+                    <div class="article" style="--i: 16">Real Estate</div>
+                    <div class="article" style="--i: 17">Research</div>
+                    <div class="article" style="--i: 18">Support</div>
+                    <div class="article" style="--i: 19">Administrative</div>
+                </div>
+                <button id="show_more">Show more
+                    <div class="arrow"></div>
+                </button>
+            </div>
+        </div>
+        <div id="post">
+            Post your job for millions of people to see
+            <a><button>Post a job</button></a>
+        </div>
+        <div class="wrapper2" style="background-color: transparent;">
+            <div style="min-width: 39%;">
+                <span>Discover the best software tools</span>
+                <p>Connect with buyers who have first-hand experience to find the best products for you.</p>
+            </div>
+            <div id="articles">
+                <div>E-Commerce Platforms</div>
+                <div>CRM Software</div>
+                <div>Human Resources Management Systems</div>
+                <div>Recruiting Software</div>
+                <div>Sales Intelligence Software</div>
+                <div>Project Management Software</div>
+                <div>Help Desk Software</div>
+                <div>Social Networking Software</div>
+                <div>Desktop Publishing Software</div>
+                <div><a href="#" class="show_all">Show all</a></div>
+            </div>
+        </div>
+        <div class="wrapper2" style="background-color: transparent;">
+            <div id="games">
+                <span>Keep your mind sharp with games</span>
+                <p>Take a break and reconnect with your network through quick daily games.</p>
+            </div>
+            <div id="articles">
+                <div>Pinpoint</div>
+                <div>Queens</div>
+                <div>Crossclimb</div>
+                <div id="game_last_child">Tango</div>
+            </div>
+        </div>
+        <div id="slideContainer">
+            <div id="slides">
+                <div class="slide">
+
+                    <div class="cont">
+                        <div>
+                            <p>Let the right people know you’re open to work</p>
+                            <p>With the Open To Work feature, you can privately tell recruiters or publicly share with
+                                the
+                                LinkedIn community that you are looking for new job opportunities.</p>
+                        </div>
+                        <img src="./images/dbvmk0tsk0o0hd59fi64z3own.png" alt="" class="img">
+                    </div>
+
+                </div>
+                <div class="slide">
+                    <div class="cont">
+                        <div>
+                            <p>Conversations today could lead to opportunity tomorrow</p>
+                            <p>Sending messages to people you know is a great way to strengthen relationships as you
+                                take
+                                the
+                                next step in your career.</p>
+                        </div>
+                        <img src="./images/2r8kd5zqpi905lkzsshdlvvn5.png" alt="" class="img">
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="cont">
+                        <div>
+                            <p>Stay up to date on your industry</p>
+                            <p>With the Open To Work feature,
+                                From live videos, to stories, to newsletters and more, LinkedIn is full of ways to stay
+                                up
+                                to
+                                date on the latest discussions in your industry.</p>
+                        </div>
+                        <img src="./images/ann24vsq7r0ux3vipqa1n90gg.png" alt="" class="img">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div id="controller"> -->
+        <div id="previous">
+            <i class="fa-solid fa-chevron-left"></i>
+        </div>
+        <div id="next">
+            <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <!-- </div> -->
+        <div id="skills">
+            <div>
+                <img src="./images/43h6n82li4xu0q23s8jqizk6j.svg" alt="">
+                <p>Connect with people who can help</p>
+                <a class="find">Find people you know</a>
+            </div>
+            <div>
+                <img src="./images/1dhh8rr3wohexkaya6jhn2y8j.svg" alt="">
+                <p>Learn the skills you need to succeed</p>
+                <div id="skillDropdown">
+                    <div class="choice" style="flex-direction: row;">
+                        Choose a topic to learn about
+                    </div>
+                    <div id="skillWrapper">
+                        <div class="skill">
+                            <a href="#" class="course-category">
+                                <p>Business Analysis and Strategy</p>
+                                <p>1,660+ courses</p>
+                            </a>
+                            <a href="#" class="course-category">
+                                <p>Business Software and Tools</p>
+                                <p>2,650+ courses</p>
+                            </a>
+                            <a href="#" class="course-category">
+                                <p>Career Development</p>
+                                <p>610+ courses</p>
+                            </a> <a href="#" class="course-category">
+                                <p>Customer Service</p>
+                                <p>250+ courses</p>
+                            </a> <a href="#" class="course-category">
+                                <p>Diversity, Equity, and Inclusion (DEI)</p>
+                                <p>320+ courses</p>
+                            </a> <a href="#" class="course-category">
+                                <p>Finance and Accounting</p>
+                                <p>300+ courses</p>
+                            </a> <a href="#" class="course-category">
+                                <p>Human Resources</p>
+                                <p>570+ courses</p>
+                            </a> <a href="#" class="course-category">
+                                <p>Leadership and Management</p>
+                                <p>2,040+ courses</p>
+                            </a> <a href="#" class="course-category">
+                                <p>Marketing</p>
+                                <p>1,030+ courses</p>
+                            </a> <a href="#" class="course-category">
+                                <p>Professional Development</p>
+                                <p>1,960+ courses</p>
+                            </a> <a href="#" class="course-category">
+                                <p>Project Management</p>
+                                <p>570+ courses</p>
+                            </a> <a href="#" class="course-category">
+                                <p>Sales</p>
+                                <p>300+ courses</p>
+                            </a> <a href="#" class="course-category">
+                                <p>Small Business and Entrepreneurship</p>
+                                <p>360+ courses</p>
+                            </a> <a href="#" class="course-category">
+                                <p>Training and Education</p>
+                                <p>320+ courses</p>
+                            </a> <a href="#" class="course-category">
+                                <p>AEC</p>
+                                <p>1,480+ courses</p>
+                            </a> <a href="#" class="course-category">
+                                <p>Animation and Illustration</p>
+                                <p>1,820+ courses</p>
+                            </a> <a href="#" class="course-category">
+                                <p>Audio and Music</p>
+                                <p>430+ courses</p>
+                            </a> <a href="#" class="course-category">
+                                <p>Graphic Design</p>
+                                <p>1,070+ courses</p>
+                            </a> <a href="#" class="course-category">
+                                <p>Motion Graphics and VFX</p>
+                                <p>920+ courses</p>
+                            </a> <a href="#" class="course-category">
+                                <p>Photography</p>
+                                <p>1,250+ courses</p>
+                            </a> <a href="#" class="course-category">
+                                <p>Product and Manufacturing</p>
+                                <p>1,500+ courses</p>
+                            </a> <a href="#" class="course-category">
+                                <p>User Experience</p>
+                                <p>590+ courses</p>
+                            </a> <a href="#" class="course-category">
+                                <p>Video</p>
+                                <p>700+ courses</p>
+                            </a> <a href="#" class="course-category">
+                                <p>Visualization and Real-Time</p>
+                                <p>1,340+ courses</p>
+                            </a> <a href="#" class="course-category">
+                                <p>Web Design</p>
+                                <p>550+ courses</p>
+                            </a> <a href="#" class="course-category">
+                                <p>Artificial Intelligence (AI)</p>
+                                <p>710+ courses</p>
+                            </a> <a href="#" class="course-category">
+                                <p>Cloud Computing</p>
+                                <p>1,520+ courses</p>
+                            </a> <a href="#" class="course-category">
+                                <p>Cybersecurity</p>
+                                <p>1,030+ courses</p>
+                            </a> <a href="#" class="course-category">
+                                <p>Data Science</p>
+                                <p>1,520+ courses</p>
+                            </a> <a href="#" class="course-category">
+                                <p>Database Management</p>
+                                <p>520+ courses</p>
+                            </a> <a href="#" class="course-category">
+                                <p>DevOps</p>
+                                <p>360+ courses</p>
+                            </a> <a href="#" class="course-category">
+                                <p>Hardware</p>
+                                <p>90+ courses</p>
+                            </a> <a href="#" class="course-category">
+                                <p>IT Help Desk</p>
+                                <p>370+ courses</p>
+                            </a> <a href="#" class="course-category">
+                                <p>Mobile Development</p>
+                                <p>490+ courses</p>
+                            </a> <a href="#" class="course-category">
+                                <p>Network and System Administration</p>
+                                <p>1,590+ courses</p>
+                            </a> <a href="#" class="course-category">
+                                <p>Software Development</p>
+                                <p>2,930+ courses</p>
+                            </a> <a href="#" class="course-category">
+                                <p>Web Development</p>
+                                <p>1,830+ courses</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navigateLife">
+            <div id="findYourself">
+                <span>Who is LinkedIn for?</span>
+                <p>Anyone looking to navigate their professional life.</p>
+                <div class="findWrapper">
+                    <div>Find a coworker or classmate</div>
+                    <div>Find a new job</div>
+                    <div>Find a course or training</div>
+                </div>
+            </div>
+            <div id="findImg">
+                <img src="./images/eghb2zc0p5s2x42wbi80w4v8a.jpg" alt="Colleagues">
+            </div>
+        </div>
+        <div class="dream">
+            <div class="vid">
+                <iframe width="500" height="378" src="https://www.youtube.com/embed/IlYUUN8rL_Y"
+                    title="Gayatri Iyer: In it to chase my dream | #InItTogether" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="story">
+                <span>In it to chase my dream</span>
+                <p>Check out Gayatri's story of finding a new job on LinkedIn</p>
+            </div>
+        </div>
+        <div class="bg"></div>
+        <div class="getStarted">
+            <p>Join your colleagues, classmates, and friends on LinkedIn.</p>
+            <a href="#">
+                <button type="button">Get started</button>
+            </a>
+        </div>
+        <div class="linkedin">
+            <div>
+                <div class="logo">
+                    <img src="./images/R.png" alt="LinkedIn Logo">
+                </div>
+                <div class="browseLinkedIn">
+                    <strong>General</strong>
+                    <a href="#">Sign Up</a>
+                    <a href="#">Help Center</a>
+                    <a href="#">About</a>
+                    <a href="#">Press</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Developers</a>
+                </div>
+                <div class="browseLinkedIn">
+                    <strong>Browse LinkedIn</strong>
+                    <a href="#">Learning</a>
+                    <a href="#">Jobs</a>
+                    <a href="#">Games</a>
+                    <a href="#">Salary</a>
+                    <a href="#">Mobile</a>
+                    <a href="#">Services</a>
+                    <a href="#">Products</a>
+                    <a href="#">Top Companies Hub</a>
+                </div>
+                <div class="browseLinkedIn">
+                    <strong>Business Solutions</strong>
+                    <a href="#">Talent</a>
+                    <a href="#">Marketing</a>
+                    <a href="#">Sales</a>
+                    <a href="#">Learning</a>
+                </div>
+                <div class="browseLinkedIn">
+                    <strong>Directories</strong>
+                    <a href="#">Members</a>
+                    <a href="#">Jobs</a>
+                    <a href="#">Companies</a>
+                    <a href="#">Featured</a>
+                    <a href="#">Learning</a>
+                    <a href="#">Posts</a>
+                    <a href="#">Articles</a>
+                    <a href="#">Schools</a>
+                    <a href="#">News</a>
+                    <a href="#">News Letters</a>
+                    <a href="#">Services</a>
+                    <a href="#">Products</a>
+                    <a href="#">Advice</a>
+                    <a href="#">People Search</a>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div>
+                <div>
+                    <img src="./images/1656997251linkedin-logo-black.webp" alt="LinkedIn Logo Black">
+                    <span>&copy;</span> <span>2024</span>
+                </div>
+                <div><a href="#">About</a></div>
+                <div><a href="#">Accessibilty</a></div>
+                <div><a href="#">User Agreement</a></div>
+                <div><a href="#">Privacy Policy</a></div>
+                <div><a href="#">Cookie Policy</a></div>
+                <div><a href="#">Copyright Policy</a></div>
+                <div><a href="#">Brand Policy</a></div>
+                <div><a href="#">Guest Controls</a></div>
+                <div><a href="#">Community Guidelines</a></div>
+                <div id="languageDropdown">
+                    <!-- <div>
+                        <div>Arabic</div>
+                        <div>Czech</div>
+                        <div>English</div>
+                        <div>Spanish</div>
+                        <div>French</div>
+                        <div>Persian</div>
+                        <div>Hindi</div>
+                        <div>Italian</div>
+                        <div>Japanese</div>
+                        <div>Polish</div>
+                    </div> -->
+                    <select name="language" id="language">
+                        <option value="language" id="optLang">
+                            Language
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </option>
+                        <option value="arabic">
+                            <div>Arabic</div>
+                        </option>
+                        <option value="czech">Czech</option>
+                        <option value="english">English</option>
+                        <option value="spanish">Spanish</option>
+                        <option value="french">French</option>
+                        <option value="persian">Persian</option>
+                        <option value="hindi">Hindi</option>
+                        <option value="italian">Italian</option>
+                        <option value="japanese">Japanese</option>
+                        <option value="portugese">Portugese</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div id="msgBox">
+            <div>
+                <img src="./images/linkedin-logo-free-download-free-png.webp" alt="LinkedIn Logo">
+                LINKEDIN
+                <div id="cancelButton">
+                    <div></div>
+                    <!-- <i class="fa-solid fa-xmark"></i> -->
+                </div>
+            </div>
+            <strong>LinkedIn is better on the app</strong>
+            <p>Don't have the app? Get it in the Microsoft Store.</p>
+            <div class="app">Open the app</div>
+        </div>
+    </div>
+    <script src="./js/dropdown.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/skillsDropdown.js"></script>
+    <script src="./js/languageDropdown.js"></script>
+    <script src="./js/cancelButton.js"></script>
+</body>
+
+</html>

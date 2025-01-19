@@ -1,0 +1,287 @@
+* {
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-decoration: none;
+  color: #333;
+  box-sizing: border-box;
+  user-select: none;
+  a:active {
+    text-decoration: underline;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0 17.5px 0 17.5px;
+  background-color: #f0efef;
+  min-height: 120vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#LinkedInLogo {
+  width: 140px;
+  position: absolute;
+  left: 12.5vw;
+  top: 20px;
+}
+
+#loginWrapper {
+  margin: 0 auto;
+  min-width: 75vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* gap: 20px; */
+}
+
+#loginWrapper strong {
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+}
+
+#loginContainer {
+  margin: -10px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 0 30px 20px 30px;
+}
+
+#loginContainer form {
+  p:nth-child(1),
+  p:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    label {
+      font-size: 15px;
+    }
+    input {
+      padding: 0 10px;
+      margin-top: 5px;
+      width: 350px;
+      height: 1.6rem;
+      border: 1px solid #000;
+      border-radius: 2px;
+      cursor: pointer;
+    }
+
+    input:hover {
+      border: 2px solid #333;
+    }
+
+    input:focus {
+      background-color: #fff;
+      outline: none;
+    }
+  }
+}
+
+#rememberMe {
+  display: flex;
+}
+
+#rememberMe input[type="checkbox"]:checked {
+  border: none;
+  background-color: rgb(26, 116, 12);
+  color: white;
+  transition: all 1s;
+  cursor: default;
+}
+
+input[type="checkbox"] {
+  min-width: 20px;
+  min-height: 20px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  height: 16px;
+  width: 16px;
+  border: 1px solid rgb(37, 37, 37);
+  border-radius: 2px;
+  color: white;
+  border-radius: 2px;
+}
+
+input[type="checkbox"]:after {
+  content: " ";
+  position: relative;
+  left: 40%;
+  top: 20%;
+  width: 15%;
+  height: 40%;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(50deg);
+  display: none;
+}
+
+input[type="checkbox"]:checked:after {
+  display: block;
+}
+
+#policy {
+  text-align: center;
+  font-size: 12px;
+  width: 350px;
+  a {
+    font-weight: 500;
+    color: rgb(6, 85, 164);
+  }
+  a:visited {
+    color: rgba(132, 20, 212, 0.519);
+  }
+}
+
+.agree {
+  border: 0;
+  min-width: 100%;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+  padding: 12px 0;
+  background-color: rgb(18, 100, 181);
+  border-radius: 50px;
+}
+
+.agree:hover {
+  background-color: rgb(14, 79, 143);
+}
+
+.agree:active {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.orSection {
+  margin-top: 30px;
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 0;
+  border: 0.5px solid #0000003c;
+  transform: scaleY(0.5);
+  p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-35px) scaleY(2);
+    background-color: #fff;
+    padding: 15px;
+  }
+}
+
+.continue {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border: 1px solid #333;
+  border-radius: 50px;
+  img {
+    padding: 7px 0px;
+    border-radius: 50%;
+    width: 40px;
+  }
+  span {
+    font-size: 15px;
+  }
+}
+#gmailContainer {
+  margin-top: 30px;
+  border-radius: 50px;
+  height: fit-content;
+  border: 1px solid transparent;
+}
+#gmailContainer:hover {
+  box-sizing: border-box;
+  border: 1px solid #333;
+}
+
+#gmailContainer:active {
+  background-color: rgba(216, 245, 248, 0.329);
+}
+
+#signIn {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 14px;
+  a {
+    color: rgb(6, 85, 164);
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  #LinkedInLogo {
+    left: 10px;
+    width: 140px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    background: #fff;
+  }
+
+  #LinkedInLogo {
+    left: 10px;
+    width: 90px;
+  }
+
+  #loginWrapper{
+    margin-top: 100px;
+  }
+}
+
+.help {
+  position: relative;
+  top: 20px;
+  font-size: 14px;
+  a {
+    color: rgb(6, 85, 164);
+  }
+  a:visited {
+    color: rgba(132, 20, 212, 0.519);
+  }
+}
+
+#readability {
+  font-weight: 600;
+  color: dodgerblue;
+  font-size: 16px;
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+  top: 121px;
+  left: 150px;
+  background-color: #fff;
+}
+
+#contactError,
+#passwordError {
+  color: rgb(244, 29, 29);
+  font-size: 12px;
+}
+
+#footer {
+  margin-top: 0;
+  padding-top: 0;
+  display: flex;
+  justify-content: center;
+}
+
+#signIn a:visited {
+  color: rgba(132, 20, 212, 0.519);
+}
+
+#regForm2 {
+  display: none;
+}

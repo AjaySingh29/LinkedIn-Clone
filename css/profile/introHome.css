@@ -1,0 +1,218 @@
+#homeContainer {
+  width: clamp(100vw, 100vw, 90vw);
+  padding: 0 11.5vw;
+  display: flex;
+  gap: 25px;
+}
+
+#homeContainer #introduction .intro {
+  width: 225px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+#homeContainer #introduction .intro .profileBg {
+  width: inherit;
+  height: 56.25px;
+  background-color: rgb(197, 221, 231);
+  overflow: hidden;
+}
+
+#homeContainer #introduction .intro .profileBg > div {
+  background-color: #deeff08e;
+  width: 70%;
+  height: 100%;
+}
+
+#homeContainer #introduction .intro .profileBg > div > div {
+  background: rgb(143, 173, 185);
+  width: 80%;
+  aspect-ratio: 1/1;
+  transform: scale(3) translate(-29%, -10px);
+  border-radius: 50%;
+}
+
+.introContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.introContainer #previewContainer3 {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 50px;
+  aspect-ratio: 1/1;
+  border: 1px solid rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  transform: translate(0, -50%) scale(1.5);
+}
+
+.introContainer section:nth-child(2) {
+  color: #000;
+  font-size: larger;
+}
+.introContainer section:nth-child(2):hover {
+  text-decoration: underline;
+}
+
+#introBox {
+  width: 100%;
+}
+
+#introBox > div {
+  width: 120%;
+  font-size: 12px;
+  line-height: 150%;
+  border-bottom: 2px solid #76767619;
+}
+#introBox > div:first-child {
+  padding: 10px 0;
+}
+#introBox > div > div {
+  padding: 5px 15px;
+  p {
+    font-weight: 600;
+  }
+}
+
+#introBox > div:not(:first-child) > div {
+  padding: 15px;
+}
+
+#introBox div .try {
+  display: flex;
+  gap: 6px;
+}
+
+#introBox div .try div {
+  display: flex;
+  align-items: center;
+}
+
+#introBox div .try div div {
+  border-radius: 3px;
+}
+
+#introBox div .try div > div:nth-child(1) {
+  position: absolute;
+  background-color: rgb(160, 100, 36);
+}
+
+#introBox div .try div > div:nth-child(2) {
+  background-color: rgb(231, 182, 61);
+  clip-path: polygon(0% 0%, 100% 0, 100% 100%);
+}
+
+#introBox div .try div div {
+  width: 14px;
+  aspect-ratio: 1/1;
+}
+
+#introBox > div:last-child > div {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  width: 100%;
+}
+
+.introContainer .article > div:hover div {
+  background-color: #dadada;
+  text-decoration: underline;
+}
+
+.discover {
+  width: 225px;
+  height: 116px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 10px 15px 0;
+  margin: 8px 0 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.discover a {
+  color: #0a66c2;
+  font-size: 12px;
+  font-weight: 500;
+  /* line-height: 25px; */
+  width: 100%;
+}
+
+.discover a:hover:not(.more > a) {
+  text-decoration: underline;
+}
+
+.discover div {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 5px 0; */
+}
+
+.discover div .discoverEvents {
+  border-radius: 50%;
+  padding: 6px 8px;
+}
+
+.discover div .discoverEvents:hover {
+  background-color: #bebebe3b;
+}
+
+.discover div .discoverEvents i {
+  font-size: 14px;
+}
+
+.discover hr {
+  border-color: #76767619;
+  width: inherit;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.discover .more a {
+  text-align: center;
+  font-size: 16px;
+  color: inherit;
+}
+
+#introduction #show_more {
+  margin-top: 10px;
+  width: 225px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  color: #000;
+  display: none;
+}
+
+/* #introduction .article {
+  display: none;
+} */
+
+#introduction #show_more > .arrow {
+  width: 10px;
+  height: 6px;
+  background-color: rgb(29, 28, 28);
+  clip-path: polygon(0 90%, 50% 0, 100% 90%, 90% 100%, 50% 20%, 10% 100%);
+  transform: rotate(180deg);
+}
+
+#introduction #show_more:hover {
+  background-color: #b9b8b85b;
+}
+#introduction #show_more:active {
+  background-color: #b9b8b8c4;
+}

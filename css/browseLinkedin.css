@@ -1,0 +1,43 @@
+.linkedin {
+  min-width: 100vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 50px;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(244, 243, 239);
+  div {
+    width: 75vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    .logo {
+      position: relative;
+      top: -20px;
+    }
+    .browseLinkedIn {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      strong {
+        margin-bottom: 5px;
+      }
+      a {
+        font-size: 14px;
+      }
+      a:hover {
+        text-decoration: underline;
+        color: rgb(13, 63, 103);
+        text-decoration-color: rgb(13, 63, 103);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .linkedin>div{
+    width: 100vw;
+  }
+}

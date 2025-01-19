@@ -1,0 +1,76 @@
+#skillDropdown {
+  display: flex;
+  flex-direction: row;
+}
+
+#skillDropdown .choice {
+  font-size: 20px;
+  border: 1px solid #efeded;
+  padding: 15px 10px;
+  border-radius: 10px;
+  display: flex;
+  gap: 50px;
+}
+
+#skillDropdown .choice:hover {
+  background-color: #efeded81;
+}
+
+#skillDropdown .choice:active {
+  background-color: #efededbc;
+}
+
+#skillDropdown .choice::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: #4b4a4a;
+  clip-path: polygon(0 50%, 100% 50%, 50% 100%);
+}
+
+#skillDropdown .choice:hover::after {
+  background-color: #000000;
+}
+
+#skillDropdown #skillWrapper{
+  width: 100%;
+  box-shadow: 2px 2.5px 4px #98979762, 1px 5px 5px #9897975c;
+  height: 410px;
+  overflow: hidden;
+  border-radius: 10px;
+  display: none;
+  background-color: white;
+}
+
+#skillDropdown #skillWrapper .skill {
+  width: 100%;
+  border-radius: 10px;
+  height: 100%;
+  overflow: scroll;
+  gap: 10px;
+}
+
+
+
+
+#skillDropdown .skill .course-category {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding: 10px 20px;
+  width: 100%;
+}
+
+#skillDropdown .skill .course-category:hover p{
+    color: rgb(41, 54, 167);
+    text-decoration: underline;
+}
+
+#skillDropdown .skill .course-category p:nth-child(1) {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+#skillDropdown .skill .course-category p:nth-child(2) {
+  font-size: 12px;
+}

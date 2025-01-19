@@ -1,0 +1,105 @@
+.navbar {
+  display: flex;
+  gap: 5vw;
+  /* width: 100%; */
+  /* background: red; */
+  position: relative;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  /* background-color: azure; */
+  position: absolute;
+  right: 0;
+  height: 100%;
+}
+
+.nav .nav_items {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 32px;
+  width: 250px;
+  overflow: auto;
+}
+
+@media screen and (min-width: 1000px){
+  .nav .nav_items {
+    min-width: 100%;
+    overflow: auto;
+    transform: translateX(-75px);
+  }
+}
+
+@media screen and (max-width: 800px) {
+ 
+  .nav .nav_items {
+    max-width: 340px;
+    overflow: auto;
+    transform: translateX(-75px);
+  }
+}
+
+.nav .nav_items span i {
+  color: rgb(98, 97, 97);
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.nav .nav_items span p {
+  color: rgb(98, 97, 97);
+  font-size: 0.9rem;
+}
+.nav .nav_items span:hover i {
+  color: rgb(22, 22, 22);
+}
+.nav .nav_items span:hover p {
+  color: rgb(27, 27, 27);
+}
+
+.nav .join_now,
+.nav .sign_in {
+  padding: 10px;
+  font-weight: 600;
+}
+
+.nav .join_now a {
+  font-weight: lighter;
+  color: rgb(43, 42, 42);
+  width: 100% !important;
+}
+
+.nav .join_now a:hover {
+  color: #000;
+}
+
+.nav .sign_in {
+  font-weight: 500;
+  border: 1px solid dodgerblue;
+  border-radius: 30px;
+  padding: 12px 22px;
+}
+
+.nav .sign_in a {
+  color: dodgerblue;
+}
+
+.nav .join_now:active {
+  border-radius: 30px;
+  background-color: rgba(128, 128, 128, 0.178);
+}
+
+.nav .sign_in:hover {
+  background-color: rgba(30, 143, 255, 0.099);
+}
+.nav .sign_in:active {
+  background-color: rgba(30, 143, 255, 0.14);
+}
+
+.logo > img {
+  width: 120px;
+}
